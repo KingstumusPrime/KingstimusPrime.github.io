@@ -33,6 +33,7 @@ window.addEventListener('resize', function(event) {
         
         });
         smallWindow = true;
+        document.querySelector(".flickity-viewport").style.height = "100%";
     }else if(this.window.innerWidth >= 750 && smallWindow == true){
         flkty.destroy();
         flkty = new Flickity( '.gallery', {
@@ -44,6 +45,7 @@ window.addEventListener('resize', function(event) {
         
         });
         smallWindow = false;
+        document.querySelector(".flickity-viewport").style.height = "100%";
     }
 }, true);
 
