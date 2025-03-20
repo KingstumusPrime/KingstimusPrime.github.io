@@ -10,6 +10,7 @@ if(this.window.innerWidth < 750){
     
     });
     smallWindow = true;
+    document.querySelector(".flickity-viewport").style.height = "100%";
 }else if(this.window.innerWidth >= 750){
     var flkty = new Flickity( '.gallery', {
         // options
@@ -19,6 +20,7 @@ if(this.window.innerWidth < 750){
     
     });
     smallWindow = false;
+    document.querySelector(".flickity-viewport").style.height = "100%";
 }
 
 
